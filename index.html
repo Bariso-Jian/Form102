@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  <h1>Afterlife Application Form</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" autocomplete="on"><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="100"><br>
+    <label for="birthyear">Birth year:</label>
+    <input type="number" id="birthyear" name="birthyear" max="9999"><br>
+    <label for="death">Cause of death:</label>
+    <select name="death" id="death">
+      <option value="oldage">Old age</option>
+      <option value="accident">Accident</option>
+      <option value="intentional">Intentional</option>
+      <option value="other">Other</option>
+    </select><br>
+    <label for="explain">Explain the cause of death:</label>
+    <textarea id="explain" name="explain" rows="4" cols="26"></textarea><br>
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label for="sex">Sex:</label>
+      <select name="sex" id="sex">
+        <option value="m">M</option>
+        <option value="f">F</option>
+        <option value="other">Other</option>
+      </select><br>
+      <label for="birthplace">Birthplace:</label>
+      <input type="text" id="birthplace" name="birthplace" value="California, US"><br>
+      <label for="bloodline">Blood line:</label>
+      <input type="text" id="bloodline" name="bloodline" placeholder="Family treeline"><br>
+      <label for="about">About yourself:</label>
+      <textarea id="about" name="about" rows="4" cols="24"></textarea>
+    </fieldset><br>
+    <label for="agree">Agree:</label>
+    <input type="text" id="agree" name="agree" readonly value="Yes"><br>
+    <button type="submit">SUBMIT</button>
+  </form>
+</body>
+</html>
